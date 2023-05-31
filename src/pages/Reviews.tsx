@@ -27,9 +27,10 @@ export default function Reviews(){
         <h2>My Reviews</h2>
         {reviewArray.map((review)=>{
             
-                return( <div className="reviewContainer"> 
+                return(<> <div className="reviewContainer"> 
                             <Review bookTitle={review.bookTitle} author={review.author} review = {review.review}/>
                         </div>
+                        <br /> </>
                 )
             
         })}
