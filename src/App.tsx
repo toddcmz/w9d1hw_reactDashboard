@@ -1,4 +1,5 @@
 import Header from './components/Header'
+import Logout from './components/Logout'
 import CarDetails from './pages/CarDetails'
 import Landing from './pages/Landing'
 import SingleCar from './pages/SingleCar'
@@ -17,6 +18,7 @@ function App() {
             <Route path='/staticReviews' element ={ <StaticReviews />} />
             <Route path='/carDetails' element ={ <CarDetails />} />
             <Route path='/carDetails/:carId' element ={ <SingleCar />} />
+            <Route path='/logout' element ={ <Logout />} />
             <Route path='*' element={ <Navigate to='/' /> } />
           </Routes>
         </BrowserRouter>
