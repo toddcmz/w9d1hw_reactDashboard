@@ -16,7 +16,7 @@ export default function Header(){
                 <NavLink to='/staticReviews'>Static Reviews</NavLink>
                 </div>
                 <div className="navButton">
-                <NavLink to='/flaskApiReviews'>Flask API Reviews</NavLink>
+                <NavLink to='/carDetails'>allCarDetails</NavLink>
                 </div>
                 <div className="navButton">Wishlist</div>
                 <div className="navButton">Logout</div>
