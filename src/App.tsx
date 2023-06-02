@@ -1,6 +1,7 @@
 import Header from './components/Header'
 import Logout from './components/Logout'
 import CarDetails from './pages/CarDetails'
+import CustomCars from './pages/CustomCars'
 import Landing from './pages/Landing'
 import SingleCar from './pages/SingleCar'
 import StaticReviews from './pages/StaticReviews'
@@ -18,6 +19,7 @@ function App() {
             <Route path='/staticReviews' element ={ <StaticReviews />} />
             <Route path='/carDetails' element ={ <CarDetails />} />
             <Route path='/carDetails/:carId' element ={ <SingleCar />} />
+            <Route path='/myCustomCars' element ={ <CustomCars />} />
             <Route path='/logout' element ={ <Logout />} />
             <Route path='*' element={ <Navigate to='/' /> } />
           </Routes>

@@ -22,9 +22,11 @@ export default function Header(){
                 <div className="navButton">
                 <NavLink to='/carDetails'>allCarDetails</NavLink>
                 </div>
-                <div className="navButton">Wishlist</div>
                 <div className="navButton">
-                   {user.username? <NavLink to='/logout'>Log out</NavLink>:<p></p>}
+                    {user.username? <NavLink to='/myCustomCars'>Custom Car List</NavLink>:<p></p>}
+                </div>
+                <div className="navButton">
+                    {user.username? <NavLink to='/logout'>Log out</NavLink>:<p></p>}
                 </div>
             </div>
         </header>
