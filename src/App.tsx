@@ -6,7 +6,6 @@ import StaticReviews from './pages/StaticReviews'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom' //must be npm i ...
 
 
-
 function App() {
 
   return (

@@ -1,17 +1,17 @@
 import { NavLink } from 'react-router-dom'
+import LoginFields from './LoginFields'
 
 export default function Header(){
-
-
     
     return(
         <header className="headerContainer flexMeRow">
             <div className="pageTitle"> 
                 <NavLink to='/'>Great Reads</NavLink>
             </div>
+            <div className="loginContainer">
+                <LoginFields/>
+            </div>
             <div className="navButtonContainer flexMeRow">
-                <div className="navButton" >Sign In</div>
-                <div className="navButton">Sign Up</div>
                 <div className="navButton">
                 <NavLink to='/staticReviews'>Static Reviews</NavLink>
                 </div>
