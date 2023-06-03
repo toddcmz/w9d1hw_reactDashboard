@@ -28,6 +28,9 @@ export default function Header(){
                 <div className="navButton">
                     {user.username? <NavLink to='/logout'>Log out</NavLink>:<p></p>}
                 </div>
+                <div className="navButton">
+                    {user.username? <p></p>:<NavLink to='/register'>Register</NavLink>}
+                </div>
             </div>
         </header>
     )

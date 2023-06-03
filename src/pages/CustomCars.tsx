@@ -12,8 +12,6 @@ export default function CustomCars(){
     const carPriceField = useRef<HTMLInputElement>(null)
     const navigate = useNavigate()
 
-
-
     function handleCollectCarForm(e:React.FormEvent<HTMLFormElement>){
         e.preventDefault()
         const currentCarArray = carArray

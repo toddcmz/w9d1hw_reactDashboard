@@ -3,6 +3,7 @@ import Logout from './components/Logout'
 import CarDetails from './pages/CarDetails'
 import CustomCars from './pages/CustomCars'
 import Landing from './pages/Landing'
+import Register from './pages/Register'
 import SingleCar from './pages/SingleCar'
 import StaticReviews from './pages/StaticReviews'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom' //must be npm i ...
@@ -16,6 +17,7 @@ function App() {
         <Header/>
           <Routes>
             <Route path='/' element ={ <Landing />} />
+            <Route path='/register' element ={ <Register />} />
             <Route path='/staticReviews' element ={ <StaticReviews />} />
             <Route path='/carDetails' element ={ <CarDetails />} />
             <Route path='/carDetails/:carId' element ={ <SingleCar />} />
