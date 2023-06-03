@@ -20,14 +20,17 @@ export default function Register(){
         // should be hosted somehwere else, right? anyway, I can't seem to find the
         // answer to this one.
         // to fix it
-        const res = await fetch('https://matrixmarvelassignment.onrender.com/api/newuser',{
+        // https://matrix-116-fakebook.onrender.com/api/register-user
+        // https://matrixmarvelassignment.onrender.com/api/newuser
+
+        const res = await fetch('https://matrix-116-fakebook.onrender.com/api/register-user',{
             method:"POST",
             headers:{
                 'Content-Type' : 'application/json'
             },
             body: JSON.stringify({
-                first_name: firstNameField.current?.value,
-                last_name: lastNameField.current?.value,
+                //first_name: firstNameField.current?.value,
+                //last_name: lastNameField.current?.value,
                 username: usernameField.current?.value,
                 email: emailField.current?.value,
                 password: passwordField.current?.value
