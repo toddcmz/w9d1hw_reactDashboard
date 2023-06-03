@@ -14,7 +14,12 @@ export default function Register(){
 
     async function handleRegisterForm(e:React.FormEvent<HTMLFormElement>){
         e.preventDefault()
-
+        // this is giving header Access-Control-Allow-Origin missing as an error, 
+        // when tryign to hit my render-hosted marvel API, which doesn't make sense
+        // to me, how are is the "same origin" policy getting hit here? Render 
+        // should be hosted somehwere else, right? anyway, I can't seem to find the
+        // answer to this one.
+        // to fix it
         const res = await fetch('https://matrixmarvelassignment.onrender.com/api/newuser',{
             method:"POST",
             headers:{
