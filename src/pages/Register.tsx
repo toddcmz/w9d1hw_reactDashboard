@@ -23,14 +23,14 @@ export default function Register(){
         // https://matrix-116-fakebook.onrender.com/api/register-user
         // https://matrixmarvelassignment.onrender.com/api/newuser
 
-        const res = await fetch('https://matrix-116-fakebook.onrender.com/api/register-user',{
+        const res = await fetch('https://matrixmarvelassignment.onrender.com/api/newuser',{
             method:"POST",
             headers:{
                 'Content-Type' : 'application/json'
             },
             body: JSON.stringify({
-                //first_name: firstNameField.current?.value,
-                //last_name: lastNameField.current?.value,
+                first_name: firstNameField.current?.value,
+                last_name: lastNameField.current?.value,
                 username: usernameField.current?.value,
                 email: emailField.current?.value,
                 password: passwordField.current?.value
